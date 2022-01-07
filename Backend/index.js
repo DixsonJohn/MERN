@@ -9,3 +9,11 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+app.get("/login", (req, res)=>{
+  res.send("you have hit the login page")
+})
+
+app.get("/signup", (req, res)=>{
+  res.send("you have hit the signup page")
+})
